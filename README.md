@@ -2,72 +2,115 @@
 
 ## About
 
-This project is a Python-based application designed to track employee utilization and recommend suitable resources for projects.  
-It focuses on solving real-world problems like underutilization, overloading, and inefficient resource allocation in IT service companies.
+The Intelligent Resource Allocation & Utilization Tracker (IRAUT) is a Python-based application designed to address a common real-world problem in IT service companies — inefficient resource utilization.
+
+Instead of only storing employee data, this system analyzes employee utilization and intelligently recommends the most suitable employee for a project while preventing over-allocation.
+
+The project focuses on decision-making logic, not just basic CRUD operations.
 
 ---
 
 ## Features
 
-- Add employee details (skill, experience, utilization)
-- Add project requirements
-- Analyze employee utilization
-- Recommend best-fit employee for a project
-- Prevent over-allocation
-- MySQL-based data storage
-- Allocation report generation
+* Add employee details dynamically at runtime
+* Add project requirements
+* Analyze employee utilization (Underutilized / Optimal / Overloaded)
+* Intelligent resource recommendation based on skill, experience, and utilization
+* Prevent over-allocation (utilization ≤ 100%)
+* Dynamic report generation
+* Clean separation of business logic and data handling
 
 ---
 
 ## Technologies Used
 
-- Python
-- MySQL
-- mysql-connector-python
-- Object-Oriented Programming (OOP)
+* Python
+* File Handling
+* Object-Oriented Programming (OOP)
+* Business Logic & Decision Making
+* Exception Handling
+* Modular Design
 
 ---
 
 ## Project Structure
 
 ```
-src/
- ├── employee.py
- ├── project.py
- ├── file_manager.py
- ├── resource_allocator.py
- └── main.py
-
-data/
- ├── employees.txt
- └── projects.txt
-
-reports/
- └── utilization_report.txt
+IRAUT_Project/
+│
+├── data/
+│   ├── employees.txt        # Runtime-generated employee data
+│   └── projects.txt         # Runtime-generated project data
+│
+├── reports/
+│   └── utilization_report.txt   # Auto-generated report at runtime
+│
+├── src/
+│   ├── employee.py
+│   ├── project.py
+│   ├── file_manager.py
+│   ├── resource_allocator.py
+│   └── main.py
+│
+└── README.md
 ```
 
 ---
 
-## How to Run
+## How to Run the Project
 
-1. Start MySQL server and create a database named `iraut_db`
-2. Update MySQL credentials in `file_manager.py`
-3. Install the required package:
+1. Clone the repository:
+
    ```
-   pip install mysql-connector-python
+   git clone https://github.com/DarshanaBandabuche13/IRAUT_Project.git
    ```
-4. Run the application:
+
+2. Navigate to the project directory:
+
+   ```
+   cd IRAUT_Project
+   ```
+
+3. Run the application:
+
    ```
    python src/main.py
    ```
+
+4. Use the menu-driven interface to:
+
+   * Add employees
+   * Add projects
+   * Analyze utilization
+   * Generate allocation recommendations
+
+> Note: All data and reports are generated dynamically at runtime.
+
+---
+
+## 📊 Sample Output (Demo)
+
+```
+----------------------------------------
+Employee ID   : 101
+Employee Name : Sample Employee
+Project ID    : P201
+Skill         : Java
+Utilization   : 50%
+Status        : OPTIMAL
+Decision      : ASSIGNED
+Reason        : Skill match + Experience OK + Low utilization
+----------------------------------------
+```
+
+> ⚠️ This is sample output shown for demonstration purposes. Actual output is generated dynamically at runtime.
 
 ---
 
 ## What I Learned
 
-- Designing modular Python applications
-- Integrating Python with MySQL
-- Writing business logic instead of only CRUD operations
-- Handling real-world resource allocation scenarios
-
----
+* Designing modular Python applications
+* Implementing business logic beyond CRUD operations
+* Handling real-world allocation constraints
+* File-based persistence and report generation
+* Writing clean, maintainable, and scalable code
