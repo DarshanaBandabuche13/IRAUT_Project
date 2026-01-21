@@ -1,5 +1,2 @@
-E201,Amit,Java,3,40
-E202,Neha,Python,5,60
-E203,Rahul,SQL,2,35
-E204,Pooja,Java,6,55
-E205,Sneha,Python,4,45
+# Employee data will be added at runtime
+
