@@ -1,0 +1,133 @@
+🚀 Intelligent Resource Allocation & Utilization Tracker (IRAUT)
+📌 Overview
+
+The Intelligent Resource Allocation & Utilization Tracker (IRAUT) is a Python-based application designed to solve a real-world problem faced by IT service companies — inefficient resource utilization.
+
+Instead of only managing employee data, this system analyzes employee utilization and intelligently recommends the best-fit resource for a project while preventing over-allocation.
+
+This project focuses on decision-making logic, not just CRUD operations.
+
+🎯 Problem Statement
+
+In service-based IT organizations, poor resource allocation can lead to:
+
+Bench time (underutilized employees)
+
+Employee burnout (over-allocation)
+
+Project delivery delays
+
+IRAUT helps by:
+
+Tracking employee utilization
+
+Identifying utilization risks
+
+Recommending optimal resource allocation with justification
+
+✨ Key Features
+
+Add and manage employee details
+
+Add project requirements
+
+Analyze employee utilization (Underutilized / Optimal / Risk)
+
+Intelligent resource recommendation
+
+Over-allocation prevention (utilization ≤ 100%)
+
+Detailed report generation with justification
+
+Persistent data storage using files
+
+🧠 System Design
+
+The project follows a modular architecture:
+
+Employee & Project → Data models
+
+FileManager → Handles file-based persistence
+
+ResourceAllocator → Core business & decision logic
+
+Main Controller → Application flow & user interaction
+
+Reports → System-generated analytical outputs
+
+This separation of concerns makes the system scalable and maintainable.
+
+🛠️ Tech Stack
+
+Language: Python
+
+Concepts Used:
+
+Object-Oriented Programming (OOP)
+
+File Handling
+
+Business Logic & Decision Making
+
+Exception Handling
+
+Modular Design
+
+📂 Project Structure
+IRAUT_Project/
+│
+├── data/
+│   ├── employees.txt
+│   └── projects.txt
+│
+├── reports/
+│   └── utilization_report.txt
+│
+├── src/
+│   ├── employee.py
+│   ├── project.py
+│   ├── file_manager.py
+│   ├── resource_allocator.py
+│   └── main.py
+│
+└── README.md
+
+▶️ How to Run the Project
+
+Clone the repository
+
+Navigate to the project folder
+
+Run the application:
+
+python src/main.py
+
+📊 Sample Report Output
+----------------------------------------
+Employee ID   : 101
+Employee Name : Darshana B
+Project ID    : P201
+Skill         : Java
+Utilization   : 50%
+Status        : OPTIMAL
+Decision      : ASSIGNED
+Reason        : Skill match + Experience OK + Low utilization
+----------------------------------------
+
+🔮 Future Enhancements
+
+Database integration (MySQL / PostgreSQL)
+
+REST API development
+
+Dashboard & visualization
+
+Duplicate employee ID validation
+
+Automatic utilization update after allocation
+
+ML-based resource prediction
+
+👩‍💻 Author
+
+Darshana Bandabuche
