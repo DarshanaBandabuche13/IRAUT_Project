@@ -1,8 +1,8 @@
-# Intelligent Resource Allocation & Utilization Tracker (IRAUT)
+# Intelligent-Resource-Allocation-Engine
 
 ## About
 
-The Intelligent Resource Allocation & Utilization Tracker (IRAUT) is a Python-based application designed to address a common real-world problem in IT service companies — inefficient resource utilization.
+The Intelligent-Resource-Allocation-Engine is a Python-based application designed to address a common real-world problem in IT service companies — inefficient resource utilization.
 
 Instead of only storing employee data, this system analyzes employee utilization and intelligently recommends the most suitable employee for a project while preventing over-allocation.
 
@@ -36,7 +36,7 @@ The project focuses on decision-making logic, not just basic CRUD operations.
 ## Project Structure
 
 ```
-IRAUT_Project/
+Intelligent-Resource-Allocation-Engine/
 │
 ├── data/
 │   ├── employees.txt        # Runtime-generated employee data
@@ -68,7 +68,7 @@ IRAUT_Project/
 2. Navigate to the project directory:
 
    ```
-   cd IRAUT_Project
+   cd Intelligent-Resource-Allocation-Engine
    ```
 
 3. Run the application:
@@ -114,3 +114,4 @@ Reason        : Skill match + Experience OK + Low utilization
 * Handling real-world allocation constraints
 * File-based persistence and report generation
 * Writing clean, maintainable, and scalable code
+
